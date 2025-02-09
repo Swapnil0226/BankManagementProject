@@ -1,0 +1,29 @@
+DROP TABLE CUSTOMER;
+CREATE TABLE customer(cid int not null primary key,cname varchar(20), age int , accountBalance float, gender varchar(10), city varchar(10), atype varchar(10),password varchar(10),accNumber varchar(20));
+
+create table LoanRequest(
+	loanId int primary key ,
+	cid int,
+	cName varchar(20),
+	email varchar(20),
+	contact varchar(10),
+	loanAmount Double,
+	loanDuration int,
+	loanStatus varchar(50),
+	applicationDate date,
+	comment varchar(300)
+)
+ 
+drop table LoanRequest;
+select * from LoanRequest;
+
+
+create table employee (
+	empId varchar(10) primary key ,
+	role varchar(20),
+	name  varchar(50),
+	contactNumber varchar(10),
+	email varchar(50),
+	password varchar(10),
+	address varchar(100)
+)
